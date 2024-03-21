@@ -1,2 +1,2 @@
 # HTML-and-CSS
-Repository for HTML and CSS projects
+This space will serve as a repository for HTML and CSS projects.
