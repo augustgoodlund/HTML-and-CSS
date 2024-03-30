@@ -50,7 +50,12 @@ h1{
 }
 /*-- hover, translate, and transform effects--*/
 .container .squares:nth-child(-n+4):hover{
-    background-image:url("../Images/Icons/icon1.png");
+    background-image:url("../Images/Icons/icon2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
 .squares:nth-child(1):hover {
     background: #13b4ff;
@@ -63,4 +68,14 @@ h1{
 }
 .squares:nth-child(4):hover {
     background: #77b800;
+}
+/*-- animation effect --*/
+@keyframe race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("..images/icons/icon2.png")
+    }
+    50% {
+        transform: translateY(300px);
+    }
 }
