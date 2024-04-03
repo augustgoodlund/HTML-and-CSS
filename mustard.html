@@ -73,6 +73,7 @@ font-size: 14px;
 padding: 16px 32px;
 bottom: 5%;
 left: 40%;
+z-index:1;
 transform: translate(-50%, -50%);
 }
 .text2 {
@@ -131,6 +132,7 @@ padding: 16px 32px;
   position: relative;
   text-align: center;
   color: white;
+  position:relative;
 }
 .top-left-text {
     position: absolute;
@@ -190,10 +192,11 @@ padding: 16px 32px;
   </div>
 </div>
 <div class="videocontainer">
-<video width="400" autoplay muted loop>
-  <source src="./video/mustard.mp4" type="video/mp4">
-</video>
-<div class="top-left-text">Top Left</div>
+    <video height="400" width="600" autoplay muted loop>
+    <source src="./video/mustard.mp4" type="video/mp4"></video>
+    <div class="text1">
+    <p>Baby Mustard</p>
+    </div>
 </div>
 </body>
 <footer>
