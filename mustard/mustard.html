@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>This is the Title</title>
+	<title>Mustard</title>
 	 <font color="darkblue">
+    <meta name="viewport" content="width=device-width" />
 </head>
 <body>
 <style>
@@ -73,6 +74,7 @@ font-size: 14px;
 padding: 16px 32px;
 bottom: 5%;
 left: 40%;
+z-index:1;
 transform: translate(-50%, -50%);
 }
 .text2 {
@@ -127,6 +129,17 @@ padding: 16px 32px;
   padding: 10px;
   height: 200px;
 }
+.videocontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  position:relative;
+}
+.top-left-text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
 </style>
 <div class="navbar">
 <a href="#home">Home</a>
@@ -179,12 +192,11 @@ padding: 16px 32px;
   <div class="text2">If you're cool</div>
   </div>
 </div>
-<center><video width="400" controls>
-  <source src="mustard.mp4" type="video/mp4">
-  <source src="mustard.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
-</video></center>
+<div class="videocontainer">
+    <video height="400" width="600" autoplay muted loop>
+    <source src="./video/mustard.mp4" type="video/mp4"></video>
+    <div class="text1">Baby Mustard</div>
+</div>
 </body>
 <footer>
 <center><strong>&copy;<mark>Mustard</mark>Man Inc.</center></strong>
