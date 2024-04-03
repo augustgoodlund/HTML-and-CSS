@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>This is the Title</title>
+	 <font color="darkblue">
+</head>
+<body>
+<style>
+body {margin:70px;}
+.p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.p1:hover {
+background-color: teal;
+color: black;
+}
+#myImg { 
+  filter: saturate(8);
+  border: 1px solid red;
+  position: relative;
+}
+table {
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 100%}
+td, th {
+	border: 1px solid orange;
+    text-align: center;
+    padding: 5px;
+}
+tr:nth-child(1) {
+	background-color: yellow;
+}
+.container {
+position: relative;
+text-align: center;
+color: black;
+}
+.container1 {
+  position: relative;
+  width: 50%;
+}
+.image1 {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+}
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container1:hover .image1 {
+  opacity: 0.3;
+}
+
+.container1:hover .middle1 {
+  opacity: 1;
+}
+.text1 {
+font-family: "Lucida Console", "Courier New", monospace;
+position: absolute;
+background-color: darkblue;
+color: white;
+font-size: 14px;
+padding: 16px 32px;
+bottom: 5%;
+left: 40%;
+transform: translate(-50%, -50%);
+}
+.text2 {
+font-family: "Lucida Console", "Courier New", monospace;
+position: absolute;
+background-color: darkblue;
+color: white;
+font-size: 14px;
+padding: 16px 32px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: orange;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+}
+</style>
+<div class="navbar">
+<a href="#home">Home</a>
+<a href="#shop">Shop</a>
+<a href="#cook">Recipes</a>
+</div>
+<div id="home">
+<center><img id="myImg" src="https://images.heb.com/is/image/HEBGrocery/001853126-1" height="400" width="380"></center>
+<h1>Do not forget to buy <mark>Mustard</mark> today.</h1>
+</div>
+<div id="shop">
+<table>
+	<tr>
+    	<th>Name</th>
+        <th>Size</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+    	<td>Yellow <mark>Mustard</mark></td>
+        <td>8oz</td>
+        <td>$100.00</td>
+    </tr>
+    <tr>
+        <td>Stone Ground <mark>Mustard</mark></td>
+        <td>1oz</td>
+        <td>$79.99</td>
+    </tr>
+    <tr>
+        <td>Grey Poupon <mark>Mustard</mark></td>
+        <td>2lb</td>
+        <td>$450.00</td>
+    </tr>
+</table>
+</div>
+<div class="row">
+<div class="column" style="background-color:#fcf8b6">
+<h2>Lesser Condiments</h2>
+<p class="p1">Ketchup</p>
+<p class="p1">Mayo</p>
+<p class="p1">Salad Dressing</p>
+</div>
+  <div class="column" style="background-color:#fcebb6">
+    <h2>Better Condiments</h2>
+    <p class="p1">None, <mark>Mustard</mark> is best</p>
+</div>
+<div id="cook" class="container1">
+<img class=image1 src="https://www.tastingtable.com/img/gallery/9-best-ingredient-swaps-for-mustard/l-intro-1690380855.jpg" height="400" width="600">
+<div class="text1"><strong>Try It Yourself</strong></div>
+  <div class="middle1">
+  <div class="text2">If you're cool</div>
+  </div>
+</div>
+<center><video controls width="300">
+  <source src="/mustard.mp4" type="video/mp4">
+</video></center>
+</body>
+<footer>
+<center><strong>&copy;<mark>Mustard</mark>Man Inc.</center></strong>
+</footer>
+</html>
+
+
