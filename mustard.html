@@ -127,6 +127,16 @@ padding: 16px 32px;
   padding: 10px;
   height: 200px;
 }
+.videocontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left-text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
 </style>
 <div class="navbar">
 <a href="#home">Home</a>
@@ -179,9 +189,12 @@ padding: 16px 32px;
   <div class="text2">If you're cool</div>
   </div>
 </div>
-<video width="400" controls autoplay muted loop>
+<div class="videocontainer">
+<video width="400" autoplay muted loop>
   <source src="./video/mustard.mp4" type="video/mp4">
 </video>
+<div class="top-left-text">Top Left</div>
+</div>
 </body>
 <footer>
 <center><strong>&copy;<mark>Mustard</mark>Man Inc.</center></strong>
