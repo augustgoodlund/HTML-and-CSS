@@ -12,31 +12,131 @@
   </head>
   <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link text-light" href="#about">About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Showtimes</a>
+                  <a class="nav-link text-light" href="#showtimes">Showtimes</a>
                 </li>
                 <li class="nav-item dropdown">
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Deals</a>
+                  <a class="nav-link text-light" href="#deals">Deals</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
               </form>
             </div>
           </nav>
+          <!-- BANNER -->
+          <div class="jumbotron jumbotron-fluid bg-info text-light">
+            <div class="container">
+              <center><h1 class="display-4">ACADEMY CINEMAS</h1>
+              <p class="lead">Sit back, relax, and enjoy the show.</p></center>
+            </div>
+          </div>
+          <!--COLUMNS-->
+          <div class="container" id="about">
+            <div class="row">
+              <div class="col-sm">
+                <img class="img-fluid" src="./img/pdx.jpg" alt="Portland, OR sign/">
+              </div>
+              <div class="col-sm">
+                <h3>Accomodations</h3>
+                <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
+                <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
+                <p>All of our auditoriums are equipped with brand new Christie 3D&reg; sound systems!</p>
+                <p>Relax in our, extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly&#9855;</p>
+              </div>
+              <div class="col-sm">
+                <h3>Now Playing</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a class="nav-link" href="https://en.wikipedia.org/wiki/Kong:_Skull_Island">Kong: Skull Island</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(2017_film)">Ghost in the Shell</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="https://en.wikipedia.org/wiki/Beauty_and_the_Beast_(2017_film)">Beauty and the Beast</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
+    <!--Showtimes-->
+    <div id="showtimes">
+        <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="./img/kongskullisland.jpg" alt="kongskullisland">
+              <div class="card-body">
+                <h5 class="card-title">Kong: Skull Island</h5>
+                <p class="card-text">Scientists, soldiers and adventurers unite to explore a mythical, uncharted island in the Pacific Ocean. Cut off from everything they know, they venture into the domain of the mighty Kong, igniting the ultimate battle between man and nature. As their mission of discovery soon becomes one of survival, they must fight to escape from a primal world where humanity does not belong.</p>
+                <span class="badge badge-primary">10:30am</span>
+                <span class="badge badge-primary">1:00pm</span>
+                <span class="badge badge-primary">7:30pm</span>
+                <span class="badge badge-primary">11:30pm</span>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/ghostintheshell.jpg" alt="ghostintheshell">
+              <div class="card-body">
+                <h5 class="card-title">Ghost in the Shell</h5>
+                <p class="card-text">In the near future, Major is the first of her kind: a human who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals. When terrorism reaches a new level that includes the ability to hack into people's minds and control them, Major is uniquely qualified to stop it. As she prepares to face a new enemy, Major discovers that her life was stolen instead of saved. Now, she will stop at nothing to recover her past while punishing those who did this to her.</p>
+                <span class="badge badge-primary">9:30am</span>
+                <span class="badge badge-primary">12:00pm</span>
+                <span class="badge badge-primary">7:00pm</span>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/beautyandthebeast.jpg" alt="beautyandthebeast">
+              <div class="card-body">
+                <h5 class="card-title">Beauty and the Beast</h5>
+                <p class="card-text">An arrogant prince is cursed to live as a terrifying beast until he finds true love. Strangely, his chance comes when he captures an unwary clockmaker, whose place is then taken by his bold and beautiful daughter Belle. Helped by the Beast's similarly enchanted servants, including a clock, a teapot and a candelabra, Belle begins to see the sensitive soul behind the fearsome facade. But as time runs out, it soon becomes obvious that Belle's cocky suitor Gaston is the real beast of the piece.</p>
+                <span class="badge badge-primary">11:00am</span>
+                <span class="badge badge-primary">2:30pm</span>
+                <span class="badge badge-primary">4:45pm</span>
+                <span class="badge badge-primary">8:15pm</span>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!--/ Showtimes-->
 
+        <!--EMAIL FORM-->
+      <div class="text-center" id="deals">
+        <form>
+            <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
+            <div class="form-group">
+              <input type="email" class="form-control mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width: 200px;">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
 
-
+        <div class="container my-5">
+            <ul class="nav nav-inline">
+                <li class="nav-item">
+                    <small><a class="nav-link" href="a">Movie Rewards</a></small>
+                </li>
+                <li class="nav-item">
+                    <small><a class="nav-link active" href="a">Movies@news.org</a></small>
+                </li>
+                <li class="nav-item">
+                    <small><a class="nav-link" href="a">Info@academycinemas.com</a></small>
+                </li>
+                <li class="nav-item">
+                    <small class="nav-link">&copy;2024 Academy Cinemas&reg;</small>
+                </li>
+            </ul>
+        </div>
 
 
 
