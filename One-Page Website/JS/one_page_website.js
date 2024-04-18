@@ -1,3 +1,7 @@
+document.body.classList.add('fade-out');
+window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('fade-out');
+});
 function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
@@ -33,4 +37,47 @@ function openModal() {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  function validateForm() {
+    let x = document.forms["contact"]["fname"].value;
+    let y = document.forms["contact"]["lname"].value;
+    let z = document.forms["contact"]["email"].value;
+    let n = document.forms["contact"]["phone"].value;
+    if (x == "") {
+      alert("First name is required");
+      return false;
+    }
+    else if (y == "") {
+    alert("Last name is required");
+    return false;
+    }
+    else if (z == "") {
+    alert("Email address is required");
+    return false;
+    }
+    else if (n == "") {
+    alert("Phone number is required");
+    return false;
+    }
+  }
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
   }

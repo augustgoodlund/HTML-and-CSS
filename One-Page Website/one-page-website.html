@@ -7,9 +7,16 @@
 <script src="JS/one_page_website.js" defer></script>
 </head>
 	<header>
-<h1>Flower Arrangements</h1>
+    <h1 style="font-size:10vw;">Flower Arrangements</h1>
+    <!--<p style="font-size:10vw;">10vw will set the size to 10% of the viewport width.</p>
+    <p>vw stands for "viewport width"</p> -->
 	</header>
 <body>
+  <hr>
+<!--animation-->
+<div id="bee">
+  <img src="./Images/bee.png">
+</div>
 <!-- NAV -->
 	<div>
     	<div>
@@ -25,7 +32,20 @@
 	<div id="home">
     	<div>
         	<div>
-            <span>Home</span>
+            <h1>Home</h1>
+            <!--AUTO SLIDESHOW-->
+            <div id="slideshow">
+              <div>
+                <img class="mySlides" src="./Images/plant1-small.png">
+              </div>
+              <div>
+                <img class="mySlides" src="./Images/plant2-small.png">
+              </div>
+              <div>
+                <img class="mySlides" src="./Images/plant3-small.png">
+              </div>
+            </div>
+            <!--/AUTO SLIDESHOW-->
             <iframe width="1349" height="480" src="https://www.youtube.com/embed/UZ9uyQI3pF0" title="Relaxing Nature Ambience Meditation🌼GOOD MORNING SPRING NATURE THERAPY🌷Flowery MEADOW Healing Sounds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
@@ -102,22 +122,22 @@
 <section>
 	<div id="contact">
     	<div class="reservation">
-        <h1>Contact Us</h1>
-        <div>
-        <h2><span>Have a question?</span>
-        <br><em>Let us know!</em>
+        <button class="open-button" onclick="openForm()">Contact Us</button>
+        <!--MODAL-->
+        <div class="form-popup" id="myForm">
+        <br><p1><em>Please provide your contact information.</em></p1>
         </h2>
-        <p>Please provide your contact information.</p>
         	<div>
-            <form action="" method="post">
-            <input class="contact" type="text" value="First Name">
-            <br><input class="contact" type="text" value="Last Name">
-            <br><input class="contact" type="text" value="Email">
-            <br><input class="contact" type="text" value="Question">
+            <form name="contact" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <input class="contact" type="text" id = "fname" value="First Name">
+            <br><input class="contact" type="text" id = "lname" value="Last Name">
+            <br><input class="contact" type="text" id = "email" value="Email">
+            <br><input class="contact" type="text" id = "phone" value="Phone Number">
             <div class="form spacer">
             </div>
             <div>
-            <input type="submit" value="Submit">
+            <button type="submit" class="btn" value="Submit">Submit</button>
+            <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
             </div>
         </div>
         </div>
@@ -126,7 +146,10 @@
 <!-- END CONTACT -->
 <!-- FOOTER -->
 <div>
-ww.soapcarving.soap &copy; 2024
+ww.garden.fleur &copy; 2024
+  <div id="chrysanthemum">
+    <img src="./Images/chrysanthemum.png">
+  </div>
 </div>
 <!-- END FOOTER -->
 </body>
